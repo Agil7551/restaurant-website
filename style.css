@@ -1,0 +1,270 @@
+/* Page */
+body {
+    background-color: #E8DCC4;
+}
+
+/* Header / navbar */
+.restaurant-navbar {
+    background-color: #7B2D26;
+    color: #E8DCC4;
+}
+
+.nav-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-button {
+    --bs-btn-bg: #D4A373;
+    --bs-btn-color: #3B1F1A;
+    --bs-btn-border-color: #3B1F1A;
+
+    --bs-btn-hover-bg: #c08f5e;
+    --bs-btn-hover-color: #3B1F1A;
+    --bs-btn-hover-border-color: #3B1F1A;
+
+    --bs-btn-active-bg: #3B1F1A;
+    --bs-btn-active-color: #E8DCC4;
+    --bs-btn-active-border-color: #3B1F1A;
+
+    --bs-btn-focus-shadow-rgb: 212, 163, 115;
+}
+
+/* Menu dropdown */
+.dropdown-menu {
+    --bs-dropdown-bg: #E8DCC4;
+    --bs-dropdown-border-color: #3B1F1A;
+    --bs-dropdown-link-color: #3B1F1A;
+    --bs-dropdown-link-hover-bg: #D4A373;
+    --bs-dropdown-link-hover-color: #3B1F1A;
+    --bs-dropdown-link-active-bg: #7B2D26;
+    --bs-dropdown-link-active-color: #E8DCC4;
+}
+
+/* Main content column */
+.page-column {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background: url("images/background.jpg") center / cover no-repeat;
+}
+
+/* Title section */
+.hero {
+    background-color: #7B2D26;
+    color: #E8DCC4;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* ---------- Menu page ---------- */
+
+/* Panels that sit on top of the background image */
+.carousel-panel,
+.menu-panel {
+    background-color: #E8DCC4;
+    border: 1px solid #3B1F1A;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+/* Carousel images and the meal name under each picture */
+.meal-carousel img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0.375rem;
+}
+
+.carousel-meal-name {
+    text-align: center;
+    font-weight: bold;
+    color: #3B1F1A;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+/* Keep the arrow buttons over the picture, not the name below it */
+.meal-carousel .carousel-control-prev,
+.meal-carousel .carousel-control-next {
+    height: 300px;
+}
+
+/* Meal selector (nav pills) */
+#mealTabs {
+    --bs-nav-link-color: #3B1F1A;
+    --bs-nav-link-hover-color: #7B2D26;
+    --bs-nav-pills-link-active-bg: #7B2D26;
+    --bs-nav-pills-link-active-color: #E8DCC4;
+}
+
+#mealTabs {
+    gap: 0.5rem;
+}
+
+#mealTabs .nav-link {
+    border: 1px solid #3B1F1A;
+    font-weight: bold;
+}
+
+/* Menu accordion */
+.accordion {
+    --bs-accordion-bg: #F0E8DB;
+    --bs-accordion-color: #3B1F1A;
+    --bs-accordion-border-color: #3B1F1A;
+    --bs-accordion-btn-color: #3B1F1A;
+    --bs-accordion-active-bg: #D4A373;
+    --bs-accordion-active-color: #3B1F1A;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(123, 45, 38, 0.25);
+}
+
+/* Menu items: name on the left, price on the right */
+.menu-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.menu-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+    border-bottom: 1px dotted #3B1F1A;
+}
+
+.menu-list li:last-child {
+    border-bottom: none;
+}
+
+/* ---------- Shared page content ---------- */
+
+/* Content below the hero, lined up with the hero's edges */
+.page-content {
+    padding: 0 2rem 2rem;
+}
+
+/* Biscuit panel that sits on top of the background image */
+.content-panel {
+    background-color: #E8DCC4;
+    border: 1px solid #3B1F1A;
+    border-radius: 0.5rem;
+    padding: 1.5rem 2rem;
+    color: #3B1F1A;
+}
+
+/* ---------- Homepage cards ---------- */
+
+.card {
+    --bs-card-bg: #E8DCC4;
+    --bs-card-color: #3B1F1A;
+    --bs-card-border-color: #3B1F1A;
+    --bs-card-cap-bg: #7B2D26;
+    --bs-card-cap-color: #E8DCC4;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .list-group {
+    --bs-list-group-bg: #E8DCC4;
+    --bs-list-group-color: #3B1F1A;
+    --bs-list-group-border-color: #3B1F1A;
+}
+
+/* ---------- About page ---------- */
+
+/* Quote author line, readable on the burgundy hero */
+.quote-author {
+    color: #D4A373;
+    margin-top: 0.25rem;
+}
+
+.about-panel section + section {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px dotted #3B1F1A;
+}
+
+/* Floated images (full width on phones, floated from tablet size up) */
+.about-img {
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid #3B1F1A;
+}
+
+@media (min-width: 768px) {
+    .about-img {
+        width: 280px;
+    }
+}
+
+/* ---------- Contact page ---------- */
+
+.contact-panel {
+    border: 1px solid #3B1F1A;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.contact-heading {
+    background-color: #7B2D26;
+    color: #E8DCC4;
+    text-align: center;
+    padding: 1rem;
+}
+
+.contact-body {
+    background-color: #E8DCC4;
+    color: #3B1F1A;
+    padding: 1.5rem 2rem;
+}
+
+.contact-body .form-control {
+    background-color: #F0E8DB;
+    border-color: #3B1F1A;
+}
+
+.contact-body .form-control:focus {
+    border-color: #7B2D26;
+    box-shadow: 0 0 0 0.25rem rgba(123, 45, 38, 0.25);
+}
+
+/* Confirmation modal */
+.modal-content {
+    background-color: #E8DCC4;
+    color: #3B1F1A;
+    border: 1px solid #3B1F1A;
+}
+
+.modal-header {
+    background-color: #7B2D26;
+    color: #E8DCC4;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+/* Footer */
+.restaurant-footer {
+    background-color: #3B1F1A;
+    color: #E8DCC4;
+    border-top: 1px solid #3B1F1A;
+}
+
+.social-links a {
+    color: #E8DCC4;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #D4A373;
+}
