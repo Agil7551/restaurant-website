@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About | The Glen</title>
+    <meta name="description" content="The story behind The Glen, our kitchen and our team.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header / Navbar -->
+
+    <nav class="navbar restaurant-navbar">
+        <div class="container-fluid">
+            <div class="nav-title">The Glen</div>
+            <div class="d-flex flex-row flex-wrap gap-2 ms-auto">
+                <a class="btn nav-button" href="index.html">Homepage</a>
+                <a class="btn nav-button active" aria-current="page" href="about.html">About</a>
+                <div class="dropdown">
+                    <button class="btn nav-button dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="menus.html?meal=breakfast">Breakfast</a></li>
+                        <li><a class="dropdown-item" href="menus.html?meal=lunch">Lunch</a></li>
+                        <li><a class="dropdown-item" href="menus.html?meal=dinner">Dinner</a></li>
+                    </ul>
+                </div>
+                <a class="btn nav-button" href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content area -->
+
+    <main class="container d-flex flex-column flex-grow-1">
+        <div class="page-column flex-grow-1">
+
+            <!-- Quote -->
+            <figure class="hero">
+                <blockquote class="blockquote mb-1">
+                    <p class="mb-0">"The important thing is to try and enjoy cooking."</p>
+                </blockquote>
+                <figcaption class="blockquote-footer quote-author mb-0">
+                    Gordon Ramsay, <cite title="Gordon Ramsay's Sunday Lunch">Gordon Ramsay's Sunday Lunch</cite>
+                </figcaption>
+            </figure>
+
+            <!-- Information about the restaurant -->
+            <div class="page-content">
+                <div class="content-panel about-panel">
+
+                    <section class="clearfix">
+                        <h2>Our story</h2>
+                        <p>
+                            The Glen opened its doors in 2015 as a small breakfast counter with six stools
+                            and a single griddle. Word spread about the pancakes, and within a few years we had
+                            grown into a full bistro serving breakfast, lunch and dinner.
+                        </p>
+                        <p>
+                            We're still family owned and operated, and many of the recipes on our menu come straight from
+                            our grandparents' kitchens.
+                        </p>
+                    </section>
+
+                    <section class="clearfix">
+                        <h2>Our kitchen</h2>
+                        <img src="images/restaurant.jpg" class="float-md-start about-img me-md-3 mb-3" alt="The kitchen of our restaurant">
+                        <p>
+                            Everything is made from scratch each morning: breads, sauces, soups and desserts.
+                            We buy our produce, eggs and meat from farms within fifty miles of the restaurant,
+                            so the menu changes a little with every season.
+                        </p>
+                        <p>
+                            Our head chef trained in classic French cooking and brings that care to every
+                            plate, whether it's a Sunday omelette or a Saturday night steak.
+                        </p>
+                    </section>
+
+                    <section class="clearfix">
+                        <h2>Visit us</h2>
+                        <img src="images/background.jpg" class="float-md-end about-img ms-md-3 mb-3" alt="The dining room set for dinner">
+                        <p>
+                            Our dining room seats sixty, with a quiet patio for warmer days. We welcome walk-ins
+                            and take reservations for groups of six or more.
+                        </p>
+                        <p>
+                            Open every day from 7am to 10pm. Have a question or want to book a private event?
+                            <a href="contact.html">Send us a message</a>.
+                        </p>
+                    </section>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="sticky-bottom restaurant-footer">
+        <div class="container-fluid py-2">
+            <div class="row align-items-center">
+                <div class="col"></div>
+                <div class="col text-center">&copy; 2026 The Glen</div>
+                <div class="col d-flex justify-content-end gap-3 social-links">
+                    <a href="https://facebook.com/yourpage" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/yourpage" aria-label="Instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+                    <a href="https://yelp.com/biz/yourpage" aria-label="Yelp" target="_blank" rel="noopener"><i class="bi bi-yelp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu | The Glen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header / Navbar -->
+
+    <nav class="navbar restaurant-navbar">
+        <div class="container-fluid">
+            <div class="nav-title">The Glen</div>
+            <div class="d-flex flex-row flex-wrap gap-2 ms-auto">
+                <a class="btn nav-button" href="index.html">Homepage</a>
+                <a class="btn nav-button" href="about.html">About</a>
+                <div class="dropdown">
+                    <button class="btn nav-button dropdown-toggle active" aria-current="page" type="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="menus.html?meal=breakfast">Breakfast</a></li>
+                        <li><a class="dropdown-item" href="menus.html?meal=lunch">Lunch</a></li>
+                        <li><a class="dropdown-item" href="menus.html?meal=dinner">Dinner</a></li>
+                    </ul>
+                </div>
+                <a class="btn nav-button" href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content area -->
+
+    <main class="container d-flex flex-column flex-grow-1">
+        <div class="page-column flex-grow-1 p-4">
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="carousel-panel h-100">
+
+                        <div id="carousel-breakfast" class="carousel slide meal-carousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/pancakes.jpg" class="d-block w-100" alt="Buttermilk pancakes">
+                                    <p class="carousel-meal-name">Buttermilk Pancakes</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/eggsBenedict.jpg" class="d-block w-100" alt="Eggs Benedict">
+                                    <p class="carousel-meal-name">Eggs Benedict</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/avocado-toast.jpg" class="d-block w-100" alt="Avocado toast">
+                                    <p class="carousel-meal-name">Avocado Toast</p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-breakfast" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-breakfast" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <div id="carousel-lunch" class="carousel slide meal-carousel d-none" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/clubSandwich.jpg" class="d-block w-100" alt="Club sandwich">
+                                    <p class="carousel-meal-name">Club Sandwich</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/caesarSalad.jpg" class="d-block w-100" alt="Caesar salad">
+                                    <p class="carousel-meal-name">Caesar Salad</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/tomatoBasil.jpg" class="d-block w-100" alt="Tomato basil soup">
+                                    <p class="carousel-meal-name">Tomato Basil Soup</p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-lunch" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-lunch" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <div id="carousel-dinner" class="carousel slide meal-carousel d-none" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/ribeye.jpg" class="d-block w-100" alt="Grilled ribeye steak">
+                                    <p class="carousel-meal-name">Grilled Ribeye</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/searedSalmon.jpg" class="d-block w-100" alt="Pan-seared salmon">
+                                    <p class="carousel-meal-name">Pan-Seared Salmon</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/mahiMahi.jpg" class="d-block w-100" alt="Mahi Mahi">
+                                    <p class="carousel-meal-name">Mahi Mahi</p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-dinner" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-dinner" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right: menu container -->
+
+                <div class="col-md-8">
+                    <div class="menu-panel h-100">
+
+                        <!-- Meal selector (nav pills) -->
+
+                        <ul class="nav nav-pills nav-fill mb-3" id="mealTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="breakfast-tab" data-meal="breakfast" data-bs-toggle="pill" data-bs-target="#breakfast-pane" type="button" role="tab" aria-controls="breakfast-pane" aria-selected="true">Breakfast</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="lunch-tab" data-meal="lunch" data-bs-toggle="pill" data-bs-target="#lunch-pane" type="button" role="tab" aria-controls="lunch-pane" aria-selected="false">Lunch</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="dinner-tab" data-meal="dinner" data-bs-toggle="pill" data-bs-target="#dinner-pane" type="button" role="tab" aria-controls="dinner-pane" aria-selected="false">Dinner</button>
+                            </li>
+                        </ul>
+
+                        <!-- Menu for the selected meal (accordion with 3 sections) -->
+
+                        <div class="tab-content">
+
+                            <!-- Breakfast -->
+                            <div class="tab-pane fade show active" id="breakfast-pane" role="tabpanel" aria-labelledby="breakfast-tab">
+                                <div class="accordion" id="breakfastAccordion">
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#breakfast-starters" aria-expanded="true" aria-controls="breakfast-starters">Pastries and Starters</button>
+                                        </h2>
+                                        <div id="breakfast-starters" class="accordion-collapse collapse show" data-bs-parent="#breakfastAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="menu-list">
+                                                    <li><span>Butter Croissant</span><span>$4</span></li>
+                                                    <li><span>Blueberry Muffin</span><span>$4</span></li>
+                                                    <li><span>Yogurt Parfait</span><span>$7</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#breakfast-plates" aria-expanded="false" aria-controls="breakfast-plates">Hot Plates</button>
+                                        </h2>
+                                        <div id="breakfast-plates" class="accordion-collapse collapse" data-bs-parent="#breakfastAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="menu-list">
+                                                    <li><span>Buttermilk Pancakes</span><span>$11</span></li>
+                                                    <li><span>Eggs Benedict</span><span>$14</span></li>
+                                                    <li><span>Avocado Toast</span><span>$12</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#breakfast-drinks" aria-expanded="false" aria-controls="breakfast-drinks">Drinks</button>
+                                        </h2>
+                                        <div id="breakfast-drinks" class="accordion-collapse collapse" data-bs-parent="#breakfastAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="menu-list">
+                                                    <li><span>Coffee</span><span>$3</span></li>
+                                                    <li><span>Fresh Orange Juice</span><span>$5</span></li>
+                                                    <li><span>Sweet Tea</span><span>$3</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Lunch -->
+                            <div class="tab-pane fade" id="lunch-pane" role="tabpanel" aria-labelledby="lunch-tab">
+                                <div class="accordion" id="lunchAccordion">
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#lunch-starters" aria-expanded="true" aria-controls="lunch-starters">Starters</button>
+                                        </h2>
+                                        <div id="lunch-starters" class="accordion-collapse collapse show" data-bs-parent="#lunchAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="menu-list">
+                                                    <li><span>Tomato Basil Soup</span><span>$7</span></li>
+                                                    <li><span>Garlic Bread</span><span>$6</span></li>
+                                                    <li><span>Bruschetta</span><span>$9</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lunch-mains" aria-expanded="false" aria-controls="lunch-mains">Mains</button>
+                                        </h2>
+                                        <div id="lunch-mains" class="accordion-collapse collapse" data-bs-parent="#lunchAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="menu-list">
+                                                    <li><span>Club Sandwich</span><span>$13</span></li>
+                                                    <li><span>Caesar Salad</span><span>$12</span></li>
+                                                    <li><span>Bistro Burger</span><span>$15</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lunch-desserts" aria-expanded="false" aria-controls="lunch-desserts">Desserts</button>
+                                        </h2>
+                                        <div id="lunch-desserts" class="accordion-collapse collapse" data-bs-parent="#lunchAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="menu-list">
+                                                    <li><span>Chocolate Brownie</span><span>$6</span></li>
+                                                    <li><span>Lemon Tart</span><span>$7</span></li>
+                                                    <li><span>Vanilla Gelato</span><span>$5</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Dinner -->
+                            <div class="tab-pane fade" id="dinner-pane" role="tabpanel" aria-labelledby="dinner-tab">
+                                <div class="accordion" id="dinnerAccordion">
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#dinner-appetizers" aria-expanded="true" aria-controls="dinner-appetizers">Appetizers</button>
+                                        </h2>
+                                        <div id="dinner-appetizers" class="accordion-collapse collapse show" data-bs-parent="#dinnerAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="menu-list">
+                                                    <li><span>Crab Cakes</span><span>$14</span></li>
+                                                    <li><span>Boneless Wings</span><span>$11</span></li>
+                                                    <li><span>French Onion Soup</span><span>$9</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dinner-entrees" aria-expanded="false" aria-controls="dinner-entrees">Entrées</button>
+                                        </h2>
+                                        <div id="dinner-entrees" class="accordion-collapse collapse" data-bs-parent="#dinnerAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="menu-list">
+                                                    <li><span>Grilled Ribeye</span><span>$32</span></li>
+                                                    <li><span>Pan-Seared Salmon</span><span>$21</span></li>
+                                                    <li><span>Mahi Mahi</span><span>$28</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dinner-desserts" aria-expanded="false" aria-controls="dinner-desserts">Desserts</button>
+                                        </h2>
+                                        <div id="dinner-desserts" class="accordion-collapse collapse" data-bs-parent="#dinnerAccordion">
+                                            <div class="accordion-body">
+                                                <ul class="menu-list">
+                                                    <li><span>Crème Brûlée</span><span>$9</span></li>
+                                                    <li><span>Chocolate Lava Cake</span><span>$10</span></li>
+                                                    <li><span>New York Cheesecake</span><span>$8</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="sticky-bottom restaurant-footer">
+        <div class="container-fluid py-2">
+            <div class="row align-items-center">
+                <div class="col"></div>
+                <div class="col text-center">&copy; 2026 The Glen</div>
+                <div class="col d-flex justify-content-end gap-3 social-links">
+                    <a href="https://facebook.com/yourpage" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/yourpage" aria-label="Instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+                    <a href="https://yelp.com/biz/yourpage" aria-label="Yelp" target="_blank" rel="noopener"><i class="bi bi-yelp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="menus.js"></script>
+</body>
+</html>

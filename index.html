@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | The Glen</title>
+    <meta name="description" content="The Glen serves fresh breakfast, lunch and dinner every day.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header / Navbar -->
+
+    <nav class="navbar restaurant-navbar">
+        <div class="container-fluid">
+            <div class="nav-title">The Glen</div>
+            <div class="d-flex flex-row flex-wrap gap-2 ms-auto">
+                <a class="btn nav-button active" aria-current="page" href="index.html">Homepage</a>
+                <a class="btn nav-button" href="about.html">About</a>
+                <div class="dropdown">
+                    <button class="btn nav-button dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="menus.html?meal=breakfast">Breakfast</a></li>
+                        <li><a class="dropdown-item" href="menus.html?meal=lunch">Lunch</a></li>
+                        <li><a class="dropdown-item" href="menus.html?meal=dinner">Dinner</a></li>
+                    </ul>
+                </div>
+                <a class="btn nav-button" href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content area -->
+
+    <main class="container d-flex flex-column flex-grow-1">
+        <div class="page-column flex-grow-1">
+
+            <!-- Restaurant name -->
+            <div class="hero">
+                <h1 class="display-4 mb-0">Welcome to The Glen</h1>
+            </div>
+
+            <div class="page-content">
+                <div class="row g-4 justify-content-between">
+
+                    <!-- Left card: brief description -->
+                    <div class="col-md-5 col-lg-4">
+                        <div class="card h-100">
+                            <img src="images/restaurant.jpg" class="card-img-top" alt="The kitchen at The Glen">
+                            <div class="card-body">
+                                <h2 class="card-title h4">Welcome</h2>
+                                <p class="card-text">
+                                    A neighborhood restuarant serving breakfast, lunch and dinner,
+                                    made from scratch with fresh, local ingredients.
+                                </p>
+                                <a href="about.html" class="btn nav-button">About us</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right card: specials of the day -->
+                    <div class="col-md-5 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <h2 class="h4 mb-0">Today's specials</h2>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="d-flex justify-content-between"><strong>Breakfast</strong><span>$12</span></div>
+                                    Lemon ricotta pancakes with fresh berries
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="d-flex justify-content-between"><strong>Lunch</strong><span>$14</span></div>
+                                    Roasted turkey panini with soup of the day
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="d-flex justify-content-between"><strong>Dinner</strong><span>$28</span></div>
+                                    Braised short ribs with garlic mashed potatoes
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="menus.html" class="btn nav-button">Full menu</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="sticky-bottom restaurant-footer">
+        <div class="container-fluid py-2">
+            <div class="row align-items-center">
+                <div class="col"></div>
+                <div class="col text-center">&copy; 2026 The Glen</div>
+                <div class="col d-flex justify-content-end gap-3 social-links">
+                    <a href="https://facebook.com/yourpage" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/yourpage" aria-label="Instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+                    <a href="https://yelp.com/biz/yourpage" aria-label="Yelp" target="_blank" rel="noopener"><i class="bi bi-yelp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
